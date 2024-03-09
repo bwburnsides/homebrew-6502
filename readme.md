@@ -38,7 +38,7 @@ The system will internally hold a 128 x 128 tile map which will allow for both v
 
 The system will be capable of render TBD number of sprites, which are configured to use one of the bitmap images and colored with one of the color palettes.
 
-Besides VGA control registers and the sprite table, the total VRAM used by the system will be 44 KB. It will be accessible in 8 KB blocks, of which two can be mapped into the system memory map at a time.
+Besides VGA control registers and the sprite table, the total VRAM used by the system will be **44 KB**. It will be accessible in 8 KB blocks, of which two can be mapped into the system memory map at a time.
 
 - 128 x 128 tile map with 2 bytes per tile to specify the bitmap and tile, for a total of **32 KB**.
 - 256x color palettes, each containing 16x 1 byte entries that represent 3 bits of red depth, 3 bits of green depth, and 2 bits of blue depth. A total of **4 KB** used.
@@ -70,3 +70,9 @@ The 65C02 has a "zero-page" addressable region in the first 256 bytes of the add
 The memory map from `0x0000` to `0xffff` will be divided into 4x 16 KB pages. The low pages may contain RAM or VRAM & IO. The high pages may contain ROM.
 
 TBD: Make ROM and RAM mappable into any of the 4x pages?
+
+<!-- ![A diagram of the memory map described above.](assets/mmap.png) -->
+
+<p align="center">
+  <img src="assets/mmap.png">
+</p>
